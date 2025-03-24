@@ -112,3 +112,62 @@ header {
 	height: auto;
 	margin: 1em
 }
+
+.weapon-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.weapon-container {
+	display: flex;
+	align-items: center;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	max-width: 800px;
+	width: 100%;
+}
+
+.weapon-container img {
+	width: 40%;
+	height: auto;
+}
+
+.weapon-description {
+	padding: 15px;
+	width: 60%;
+}
+
+.weapon-description h2 {
+	margin: 0;
+	font-size: 18px;
+	color: #2c3e50;
+}
+
+.weapon-description p {
+	font-size: 14px;
+	color: #555;
+}
+
+@media (max-width: 768px) {
+	.weapon-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.weapon-container img {
+		width=50%;
+		height=auto;
+		margin: 15% auto%;
+	}
+
+	.weapon-description {
+		width=50%; 
+		height=auto;
+		margin: 15% auto%;
+	}
+}
