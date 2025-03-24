@@ -5,86 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Présentation de Genshin Impact</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .presentation {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .presentation img {
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .characters {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .character-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-
-        .character-card:hover {
-            transform: scale(1.05);
-        }
-
-        .character-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .character-card h3 {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        .cta {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .cta a {
-            text-decoration: none;
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .cta a:hover {
-            background-color: #2980b9;
-        }
-    </style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -92,20 +14,22 @@
 <header>
     <h1>Armes</h1>
 </header>
+<section class="weapon-images">
+	<img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Ultime-soupir-full.webp" alt="Venti" width=50% height=auto data-aos="zoom-in" margin: 15% auto>
+	<img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Perceur-prismatique-full-elevation.webp" alt="Zhongli" width=50% height=auto data-aos="zoom-in">
+	<img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Lumiere-du-faucheur-full-elevation.webp" alt="Raiden" width=50% height=auto data-aos="zoom-in">
+	<img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Mille-reves-flottants-full.webp" alt="Nahida" width=50% height=auto data-aos="zoom-in">
+	<img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Splendeur-des-eaux-calmes-full-elevation.webp" alt="Furina" width=50% height=auto data-aos="zoom-in">
+	<img src="https://lagazettedeteyvat.fr/wp-content/uploads/2025/01/Mille-soleils-brulants-full-elevation.webp" alt="Mavuika" width=50% height=auto data-aos="zoom-in">
+</section>
 
-<div class="container">
-    <section class="presentation">
-        <h2>Armes</h2>
-		<img src="Wolf_A2.png" alt="Fond">
-	</section>
- 
-    <section class="characters">
-		<div class="character-card">
-            <img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Mort-du-loup-full-elevation.webp" alt="Arme">
-            <h3>Arme</h3>
-        </div>
-    </section>
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </body>
 </html>

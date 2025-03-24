@@ -5,110 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Présentation de Genshin Impact</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .presentation {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .presentation img {
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .characters {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .character-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-		
-		.arme-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-
-        .character-card:hover {
-            transform: scale(1.05);
-        }
-
-        .character-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .character-card h3 {
-            text-align: center;
-            margin: 10px 0;
-        }
-		
-		.arme-card:hover {
-			transform: scale(1.05);
-        }
-
-        .arme-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .arme-card h3 {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-
-        .cta {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .cta a {
-            text-decoration: none;
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .cta a:hover {
-            background-color: #2980b9;
-        }
-    </style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -118,21 +16,21 @@
 </header>
 
 <div class="container">
-    <section class="presentation">
+    <section class="presentation" data-aos="fade-up">
         <h2>Explorez le monde de Teyvat</h2>
         <p>Genshin Impact est un jeu RPG d'action gratuit développé et publié par miHoYo. Le jeu propose un environnement de monde ouvert fantastique et un système de combat basé sur l'action utilisant la magie élémentaire, le changement de personnage et système de monétisation gacha permettant aux joueurs d'obtenir de nouveaux personnages, armes et autres ressources. Le jeu ne peut être joué qu'avec une connexion Internet et propose un mode multijoueur limité permettant jusqu'à quatre joueurs dans un monde. </p>
 		<img src="https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg" alt="Fond">
 	</section>
  
     <section class="characters">
-    <a href="personnages.html" class="character-card">
+    <a href="personnages.html" class="character-card" data-aos="flip-left">
         <div>
-			<img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/diluc/image.png?strip=all&quality=75&w=256" alt="Diluc">
+			<img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/mavuika/image.png?strip=all&quality=75&w=256" alt="Mavuika">
             <h3>Personnage</h3>
         </div>
     </a>
     
-    <a href="armes.html" class="arme-card">
+    <a href="armes.html" class="arme-card" data-aos="flip-right">
         <div>
             <img src="https://lagazettedeteyvat.fr/wp-content/uploads/2024/11/Mort-du-loup-full-elevation.webp" alt="Arme">
             <h3>Arme</h3>
@@ -145,6 +43,14 @@
         <a href="https://genshin.hoyoverse.com/fr" target="_blank">Téléchargez Genshin Impact</a>
     </section>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </body>
 </html>
