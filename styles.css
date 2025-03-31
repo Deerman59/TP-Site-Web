@@ -130,6 +130,7 @@ header {
 	overflow: hidden;
 	max-width: 900px;
 	width: 100%;
+	padding:15px;
 }
 
 .weapon-container img {
@@ -189,6 +190,7 @@ header {
 	overflow: hidden;
 	max-width: 800px;
 	width: 100%;
+	padding:15px;
 }
 
 .personnage-container img {
@@ -205,6 +207,11 @@ header {
 	margin: 0;
 	font-size: 18px;
 	color: #2c3e50;
+}
+
+.personnage-description img {
+	width: 20px;
+	height: auto;
 }
 
 .personnage-description p {
